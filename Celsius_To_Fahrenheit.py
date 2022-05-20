@@ -1,3 +1,3 @@
-a=int(input())
-c=(9/5)*(a)+32
+t=int(input())
+c=(9*t/5)+32
 print('{:.2f}'.format(c))
