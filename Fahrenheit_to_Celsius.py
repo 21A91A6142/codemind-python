@@ -1,3 +1,3 @@
 a=int(input())
-c=(5/9)*(a-32)
-print('{:.2f}'.format(c))
+b=5*(a-32)/9
+print('{:.2f}'.format(b))
