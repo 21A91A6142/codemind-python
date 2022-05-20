@@ -1,9 +1,10 @@
 n=int(input())
-c=0
-for i in range(1,n//2):
-    if n%i==0:
-        c=c+1
-if c==1:
-    print('prime')
-else:
+f=0
+for i in range(2,n//2+1):
+    if(n%i==0):
+        f=1
+        break
+if(f==1):
     print('not a prime')
+else:
+    print('prime')
