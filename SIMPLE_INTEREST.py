@@ -1,3 +1,4 @@
-a,b,c=map(int,input().split())
-d=(a*b*c)//100
-print(d)
+import math
+p,t,r=map(int,input().split())
+c=math.trunc(p*t*r/100)
+print(c)
