@@ -1,31 +1,30 @@
-def ispalan(k):
-    q=k
+def isplan(k):
+    e=k
     s=0
-    while(q):
-        r=q%10
+    while(e):
+        r=e%10
         s=s*10+r
-        q=q//10
+        e=e//10
     if s==k:
         return True
     else:
         return False
 n=int(input())
-j=n
-y=n
+q=n
+h=n
 while(True):
-    n=n-1
-    if ispalan(n):
+    n=n+1
+    if isplan(n):
         p=n
         break
 while(True):
-    j=j+1
-    if ispalan(j):
-        g=j
+    q=q-1
+    if isplan(q):
+        m=q
         break
-if g-y>y-p:
-    print(p)
-elif g-y==y-p:
-    print(p,g)
+if(p-h>h-m):
+    print(m)
+elif(p-h==h-m):
+    print(m,p)
 else:
-    print(g)
-    
+    print(p)
