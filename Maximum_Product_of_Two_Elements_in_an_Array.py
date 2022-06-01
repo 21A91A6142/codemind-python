@@ -1,0 +1,6 @@
+a=list(map(int,input().split()))
+d=max(a)
+c=a.index(d)
+a.pop(c)
+b=max(a)
+print((d-1)*(b-1))
