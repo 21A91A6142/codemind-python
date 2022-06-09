@@ -6,7 +6,7 @@ f=[]
 e='abcdefghijklmnopqrstuvwxyz'
 for i in c:
     if i!=' ':
-        if c.count(i)<2:
+        if i not in d:
             d.append(i)
 for i in e:
     if i in d:
