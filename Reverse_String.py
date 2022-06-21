@@ -1,8 +1,4 @@
-a=str(input())
-b=list(a)
-c=[]
-for i in b:
-    if i!=' ':
-        c.append(i)
-r=c[::-1]
-print(*r)
+n=str(input())
+a=n.split()
+for i in range(len(a)-1,-1,-1):
+    print(a[i],end=' ')
