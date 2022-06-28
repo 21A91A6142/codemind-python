@@ -18,6 +18,5 @@ for i in e:
 for i in c:
     if i in f:
         g.append(i)
-h=''.join(g)
-print(h)
-        
+k=''.join(g)
+print(k)
