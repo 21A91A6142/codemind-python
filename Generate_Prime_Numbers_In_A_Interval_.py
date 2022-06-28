@@ -13,4 +13,3 @@ b=int(input())
 for i in range(a,b+1):
     if isprime(i):
         print(i)
-
