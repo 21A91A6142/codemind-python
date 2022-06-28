@@ -19,4 +19,3 @@ for i in c:
     if i in f:
         g.append(i)
 print(len(g))
-        
