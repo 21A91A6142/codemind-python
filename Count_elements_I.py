@@ -15,4 +15,3 @@ for i in e:
         f.append(i)
         h=h+1
 print(h)
-    
