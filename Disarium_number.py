@@ -1,19 +1,20 @@
-import math
-n=int(input())
-q=n
-q1=n
-c=0
-s=0
-while(q):
-    r=q%10
-    c=c+1
-    q=q//10
-while(q1!=0):
-    r1=q1%10
-    s=s+math.pow(r1,c)
-    q1=q1//10
-    c=c-1
-if(s==n):
-    print('True')
+def dis(n):
+    i=1
+    rev=0
+    R=0
+    while(n>0):
+        res=n%10
+        rev=rev*10+res
+        n=n//10
+    while(rev>0):
+        res=rev%10
+        R+=res**i
+        rev=rev//10
+        i+=1
+    return R
+x=int(input())
+temp=x
+if dis(x)==temp:
+    print("True")
 else:
-    print('False')
+    print("False")
