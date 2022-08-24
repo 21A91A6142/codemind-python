@@ -1,26 +1,23 @@
-def isprime(k):
-    if k==1:
-        return False
+def isprime(n):
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
     else:
-        for j in range(2,k//2+1):
-            if k%j==0:
-                return False
-        else:
-            return True
-def ispalan(h):
-    q=h
+        return True
+def ispalan(k):
+    q=k
     s=0
-    while q!=0:
+    while(q):
         r=q%10
         s=s*10+r
         q=q//10
-    if s==h:
+    if s==k:
         return True
     else:
         return False
 n=int(input())
 while(True):
     n=n+1
-    if isprime(n) and ispalan(n):
+    if ispalan(n) and isprime(n):
         print(n)
         break
