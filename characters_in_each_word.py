@@ -1,5 +1,4 @@
-a=str(input())
-b=a.split()
-for i in range(len(b)):
-    c=list(b[i])
-    print(len(c),end=' ')
+a=input()
+a=a.split()
+for i in a:
+    print(len(i),end=' ')
