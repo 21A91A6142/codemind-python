@@ -1,7 +1,6 @@
-a=str(input())
-b=a.split()
-c=[]
-for i in range(len(b)):
-    d=list(b[i])
-    c.append(len(d))
-print(max(c))
+a=input()
+a=a.split();
+b=[]
+for i in a:
+    b.append(len(i))
+print(max(b))
