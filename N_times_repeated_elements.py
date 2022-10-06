@@ -1,16 +1,12 @@
-n=list(input())
+n=int(input())
 a=list(map(int,input().split()))
-k=set(a)
-d=list(k)
-d.sort()
-m=int(input())
-c=0
-s=[]
+d=set(a)
+b=int(input())
+c=[]
 for i in d:
-    if a.count(i)==m:
-        c=c+1
-        s.append(i)
-if c>0:
-    print(*s)
+    if a.count(i)==b:
+        c.append(i)
+if(len(c)>0):
+    print(*c)
 else:
-    print("-1")
+    print("-1");
