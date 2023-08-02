@@ -1,10 +1,11 @@
-n=int(input())
+a=int(input())
 c=0
-for i in range(n):
-    s=input()
-    if '+' in s:
-        c=c+1
+for i in range(a):
+    x=input()
+    if(x.count('+')!=0):
+        c+=1
     else:
-        c=c-1
-print(c)
-    
+        c-=1
+print(c)        
+        
+        
